@@ -202,7 +202,7 @@ input:focus::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .__auctions {
-    padding: 0 20px !important;
+    padding: 0 5px !important;
   }
 }
 .__auctions .title__ h2 {
@@ -386,7 +386,7 @@ input:focus::-moz-placeholder {
 }
 @media (max-width: 991px) {
   .__brands {
-    padding: 0 20px !important;
+    padding: 0 5px !important;
   }
 }
 .__brands h2 {
@@ -411,7 +411,7 @@ footer {
 }
 @media (max-width: 767px) {
   footer {
-    padding: 15px 20px !important;
+    padding: 15px 5px !important;
   }
 }
 footer p {
@@ -574,7 +574,7 @@ footer .copyright__ p {
 }
 @media (max-width: 991px) {
   .navbar {
-    padding: 10px 20px !important;
+    padding: 10px 5px !important;
   }
 }
 .navbar .navbar__links {
