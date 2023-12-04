@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/sass/main.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Soumtech</title>
+    <link rel="icon" href="./assets/images/Logo.svg" type="image/x-icon">
+
+  </head>
+  <body>
+    <!-- start navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-lg-none" href="index.html">
+              <img src="/assets/images/Logo.svg" alt="logo" width="110" height="75" loaing="lazy">
+          </a>
+          <button
+            class="btn navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <img src="./assets/images/menu.svg" alt="menu" width="25" height="25" loading="lazy">
+          </button>
+          <div
+            class="offcanvas offcanvas-start-lg"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header d-flex d-lg-none">
+              <a
+                href="javascript:void(0) "
+                class="text-reset p-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="close"
+              >
+              <img src="./assets/images/close.svg" alt="close" width="25" height="25" loading="lazy">
+            </a>
+            </div>
+            <div class="offcanvas-body p-lg-0 d-flex justify-content-between align-items-center flex-row">
+              <a class="navbar-brand" href="index.html">            
+                <img src="/assets/images/Logo.svg" alt="logo" width="110" height="75" loaing="lazy" class="object-fit-contain">
+              </a>
+                  <ul class="navbar-nav navbar__links d-flex justify-content-between align-items-center flex-md-row">
+                      <li class="nav-item">
+                          <a class="nav-link active position-relative" aria-current="page" href="index.html"
+                          >الرئيسية</a
+                          >
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link position-relative" aria-current="page" href=""
+                          > المزادات </a
+                          >
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link position-relative" aria-current="page" href=""
+                          >تواصل معنا</a
+                          >
+                      </li>
+                      </ul>
+                      
+                  <a href="#" class="auth__navbar d-flex justify-content-start align-items-center flex-row gap-1 text-decoration-none">
+                      <img src="./assets/images/UserCircle.svg" alt="login icon" width="32" height="32" loaing="lazy"> <span> تسجيل الدخول </span>
+                  </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- end navbar -->
+
+    <!-- start header -->
+    <section class="header d-flex justify-content-center align-items-center position-relative">
+      <div class="container-fluid">
+        <div class="header__image d-flex justify-content-center align-items-center flex-column">
+          <div class="header__info d-flex justify-content-center align-items-center flex-column gap-4">
+            <h3>أضف سومتك وين ما كنت!</h3>
+            <p>منصة سومتك تجمع لك بين عرض العقارات أو المشاركة في المزاد اتسهلة وسريعة في بيئة إلكترونية موثوقة! </p>
+          </div>
+          <div class="header__partners d-flex justify-content-center align-items-center flex-row gap-5 position-absolute">
+            <img src="./assets/images/partener.png" alt="partener" width="250" height="90" loading="lazy">
+            <img src="./assets/images/infath-logo.svg" alt="partener" width="110" height="78" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end header -->
+
+
+    <!-- start brands -->
+    <section class="__brands">
+      <div class="container-fluid">
+        <h2> شركات المزادات  </h2>
+        <div class="brands__imgs d-flex justify-content-between flex-row align-items-center flex-wrap">
+          <img src="./assets/images/brand1.svg" alt="brand" width="222" height="73" loading="lazy">
+          <img src="./assets/images/brand2.svg" alt="brand" width="222" height="73" loading="lazy">
+          <img src="./assets/images/brand3.svg" alt="brand" width="222" height="73" loading="lazy">
+          <img src="./assets/images/brand4.svg" alt="brand" width="222" height="73" loading="lazy">
+          <img src="./assets/images/brand5.svg" alt="brand" width="222" height="73" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <!-- end brands -->
+
+    <!-- start auctions -->
+    <section class="__auctions">
+      <div class="container-fluid">
+        <div class="title__ d-flex justify-content-start align-content-start flex-row">
+          <h2> المزادات </h2>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+
+          <ul class="nav nav-pills" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-active-tab" data-bs-toggle="pill" data-bs-target="#pills-active" type="button" role="tab" aria-controls="pills-active" aria-selected="true">القائمة</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-upcoming-tab" data-bs-toggle="pill" data-bs-target="#pills-upcoming" type="button" role="tab" aria-controls="pills-upcoming" aria-selected="false">القادمة</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-past-tab" data-bs-toggle="pill" data-bs-target="#pills-past" type="button" role="tab" aria-controls="pills-past" aria-selected="false">المنتهي</button>
+            </li>
+          </ul>
+        </div>
+        <div class="auctions_items">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="auction_card">
+                <div class="auction__img position-relative">
+                  <img src="./assets/images/auction.png" class="auction__image" alt="auction image" width="280" height="250" loading="lazy">
+                  <div class="auction__location d-flex justify-content-start align-items-center flex-row gap-2">
+                    <img src="./assets/images/location2.svg" alt="location" width="9" height="14" loading="lazy">
+                    <span>
+                      شارع الأخلاص - الدمام
+                    </span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-start flex-column gap-2">
+                  <div class="auction__info d-flex justify-content-between align-items-start flex-row w-100 flex-wrap">
+                    <div class="d-flex justify-content-start align-items-start flex-column gap-2">
+                      <h2>عمارة سكنية الاندلس</h2>
+                      <span> <img src="./assets/images/ruler.svg" class="ms-1" alt="ruler" width="15" height="15" loading="lazy"> 500 م <sup>2</sup> </span>
+                    </div>
+                    <img src="./assets/images/org.png" alt="organization" width="100" height="35" loading="lazy">
+                  </div>
+                  <div class="auction__date w-100 d-flex justify-content-between align-items-start flex-row flex-wrap gap-2">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>تاريخ فتح المزاد</span>
+                      <span>19/2/2023</span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                      <span>وقت فتح المزاد</span>
+                      <span>pm 01:45 </span>
+                    </div>
+                  </div>
+                  <div class="auction__details d-flex justify-content-between flex-row align-items-start flex-wrap gap-2 w-100">
+                    <div class="d-flex justify-content-start flex-column align-items-start">
+                      <span class="_num_auc">عدد الاصول</span>
+                      <span class="_num">71</span>
+                    </div>
+                    <a href=""> تفاصيل المزاد </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more__auctions d-flex justify-content-center align-content-center flex-row">
+          <a href=""> كل المزادات </a>
+        </div>
+      </div>
+    </section>
+    <!-- end auctions -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-start flex-row flex-wrap">
+
+          <div class="footer__info d-flex justify-content-start align-items-start flex-column">
+            <img src="./assets/images/Logo-footer.svg" alt="logo" width="110" height="75" loaing="lazy">
+            <p> هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى حيث يمكنك ن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى الموقع الالكترونى. </p>
+            <div class="social__links d-flex justify-content-start align-items-start flex-row">
+              <a href=""> <img src="./assets/images/intagram.svg" alt="intagram" width="15" height="15" loaing="lazy"> </a>
+              <a href=""> <img src="./assets/images/twitter.svg" alt="twitter" width="15" height="15" loaing="lazy"> </a>
+              <a href=""> <img src="./assets/images/_Linkedin.svg" alt="linkedin" width="15" height="15" loaing="lazy"> </a>
+            </div>
+          </div>
+        
+          <div class="footer__links d-flex justify-content-start align-items-start flex-column">
+            <h2> القائمة الرئيسية </h2>
+            <ul class="d-flex justify-content-start align-items-start flex-column">
+              <li> <a href=""> الضوابط الإعلانية الصادرة من الهيئة </a> </li>
+              <li> <a href=""> الشروط والأحكام </a> </li>
+              <li> <a href=""> ترخيص الهيئة العامة للعقار </a> </li>
+              <li> <a href=""> تواصل معنا </a> </li>
+            </ul>
+          </div>
+        
+          <div class="footer__links d-flex justify-content-start align-items-start flex-column">
+            <h2> الأقسام </h2>
+            <ul class="d-flex justify-content-start align-items-start flex-column">
+              <li> <a href=""> مكتبة الدعم </a> </li>
+              <li> <a href=""> الأسئلة الشائعة </a> </li>
+            </ul>
+          </div>
+        
+          <div class="footer__links d-flex justify-content-start align-items-start flex-column">
+            <h2> تواصل معنا </h2>
+            <ul class="d-flex justify-content-start align-items-start flex-column">
+              <li> <a href="" class="d-flex justify-content-start align-items-center flex-row"> <img src="./assets/images/li_map-pin.svg" alt="location" width="20" height="20" class="ms-1" loaing="lazy"> الرياض حي الملك فيصل، السعودية  </a> </li>
+              <li> <a href="tel:+966 570 212 216" class="d-flex justify-content-start align-items-center flex-row"> <img src="./assets/images/li_phone.svg" alt="phone" width="20" height="20" class="ms-1" loaing="lazy"> 966570212216+  </a> </li>
+              <li> <a href="mailto:info@soum.tech"  class="d-flex justify-content-start align-items-center flex-row"> <img src="./assets/images/li_mail.svg" alt="mail" width="20" height="20" class="ms-1" loaing="lazy"> info@soum.tech  </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright__">
+          <hr>
+          <p> &copy جميع الحقوق محفوظة - لــ سومتك 2023</p>
+        </div>
+        
+      </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

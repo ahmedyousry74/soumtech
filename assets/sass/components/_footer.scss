@@ -1,0 +1,81 @@
+footer {
+    background-color: #fff;
+    margin-top: 67px !important;
+    padding: 50px 80px !important;
+    box-shadow: 0px -15px 25px 0px rgba(0, 0, 0, 0.02);
+    @media(max-width: 767px){
+        padding: 15px 20px !important; 
+    }
+    p {
+        color: $sixth-color;
+        line-height: 2;
+        max-width: 350px;
+    }
+    .footer__info{
+        gap: 15px;
+        @media(max-width: 991px){
+            margin-bottom: 35px;
+        }
+        .social__links {
+            gap: 10px;
+            a {
+                border: 1px solid #eaeaea;
+                border-radius: 5px;
+                padding: 10px !important;
+                width: 35px;
+                height: 35px;
+                line-height: 10px;
+            }
+        }
+    }
+    .footer__links{
+        gap: 50px;
+        @media(max-width: 991px){
+            margin-bottom: 35px;
+        }
+        h2{
+            color: $primary-color;
+            font-weight: 700;
+            position: relative;
+            font-size: 18px;
+            &::after{
+                position: absolute;
+                content: "";
+                background-color: $fourth-color;
+                width: 28px;
+                height: 3px;
+                top: 30px;
+                right: 0;
+                transition: 0.3s ease-in-out all;
+                border-radius: 25px;
+            }
+        }
+        ul{
+            gap: 20px;
+            a {
+                color: $sixth-color;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: none;
+            }
+            li{
+                transition: 0.4s ease-in-out all;
+                &:hover{
+                    margin-inline-start: 8px !important;
+                    a{
+                        color: $fourth-color;
+                    }
+                }
+            }
+        }
+    }
+    .copyright__{
+        margin-top: 36px;
+        p{
+            margin-top: 27px;
+            color: $sixth-color;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
