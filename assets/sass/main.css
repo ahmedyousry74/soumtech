@@ -446,6 +446,11 @@ footer .footer__links {
     margin-bottom: 35px;
   }
 }
+@media (max-width: 767px) {
+  footer .footer__links {
+    gap: 25px;
+  }
+}
 footer .footer__links h2 {
   color: #171D5B;
   font-weight: 700;
